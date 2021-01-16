@@ -1,1 +1,1 @@
-# CSS-GRID-Responsive-Layout.
+# Responsive layouts using GRID
