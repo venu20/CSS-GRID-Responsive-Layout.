@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Place</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="hero--details">
+                <h1>Terry's Taco Joint</h1>
+                <h3>Pretty Good Taco's</h3>
+            </div>
+            <div class="offer taco">
+                <h1 class="price">$1.99</h1>
+                <h4>Tacos</h4>
+            </div>
+            <div class="offer kombucha">
+                <h1 class="price">$3.99</h1>
+                <h4>Kombucha</h4>
+            </div>
+            <!-- <aside class="offers">
+                <div class="offer taco">
+                    <h1 class="price">$1.99</h1>
+                    <h4>Tacos</h4>
+                </div>
+                <div class="offer kombucha">
+                    <h1 class="price">$3.99</h1>
+                    <h4>Kombucha</h4>
+                </div>
+            </aside> -->
+        </header>
+        <nav class="navigation">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">
+                    <!-- <svg class="icon">
+                            <path d="M0 1v1h8v-1h-8zm0 2.969v1h8v-1h-8zm0 3v1h8v-1h-8z" id="menu"></path>
+                    </svg> -->
+                </span>
+                <span class="close">
+                    <!-- <svg class="icon">
+                        <use xlink:href="open-iconic.svg#x" class="x"></use>
+                    </svg> -->
+                </span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li><a href="#">Tacos</a></li>
+                <li><a href="#">Beers</a></li>
+                <li><a href="#">Wines</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="#">Reservations</a></li>
+            </ul>
+        </nav>
+        <section class="secondary-nav">
+            <div class="menu--item section1">
+                <figure>
+                    <img src="./images/" alt="Taco">
+                    <figcaption>Tacos</figcaption>
+                </figure>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                    previewing layouts and visual mockups.</p>
+            </div>
+            <div class="menu--item section2">
+                <figure>
+                    <img src="./images/" alt="Beer">
+                    <figcaption>Beer</figcaption>
+                </figure>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                    previewing layouts and visual mockups.</p>
+            </div>
+            <div class="menu--item section3">
+                <figure>
+                    <img src="./images/" alt="Red Wine">
+                    <figcaption>Wine</figcaption>
+                </figure>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                    previewing layouts and visual mockups.</p>
+            </div>
+            <div class="menu--item section4">
+                <figure>
+                    <img src="./images/" alt="Music Tone">
+                    <figcaption>Music</figcaption>
+                </figure>
+                <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for
+                    previewing layouts and visual mockups.</p>
+            </div>
+
+        </section>
+        <section class="featured">
+            <img src="./images/queso-taco.png" alt="Taco loaded with cheese and meat" class="featuredImage">
+            <div class="details">
+                <h2 class="name">Featured Taco</h2>
+                <h4>
+                    <p>Slim feels easy to hold and loaded with cheese.</p>
+                    <p>This is the one you have been waiting for.</p>
+                </h4>
+                <button class="btn">Learn More</button>
+            </div>
+        </section>
+        <section class="insta--picks">
+            <h2 class="title"><span>INSTANT GRAMS</span></h2>
+            <div class="gallery">
+                <img src="./images/env1.jpg" alt="">
+                <img src="./images/env2.jpg" alt="">
+                <img src="./images/env3.jpg" alt="">
+                <img src="./images/env4.jpg" alt="">
+                <img src="./images/env5.jpg" alt="">
+                <img src="./images/env6.jpg" alt="">
+                <img src="./images/env7.jpg" alt="">
+                <img src="./images/env8.jpg" alt="">
+                <img src="./images/env9.jpg" alt="">
+            </div>
+        </section>
+    </div>
+    <script>
+        const ele = document.querySelector('button');
+
+        const showMenuItems = (event) => {
+            const expanded = event.target.ariaExpanded==='false'?true:false;
+            console.log(expanded);
+
+            event.target.ariaExpanded = expanded;
+        }
+
+        ele.addEventListener('click', showMenuItems);
+
+        
+
+    </script>
+</body>
+
+</html>
